@@ -1,0 +1,11 @@
+#Ignore node_modules and dependency directories
+node_modules/
+
+# Ignore environment and secret files
+.env
+config.json
+
+# Ignore system-generated files
+Thumbs.db
+
+npm-debug.log
