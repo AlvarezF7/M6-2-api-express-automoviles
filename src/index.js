@@ -2,27 +2,28 @@
 require('dotenv').config(); 
 
 const express = require('express');
+const path = require('path'); //modulo para rutas absolutas
 const app = express();
 
-const pool = require('./data_base');//
+const pool = require('./data_base'); 
 
 const PORT = process.env.PORT || 3000; //puerto donde escucha express
 
 app.use(express.json());
-app.use(express.static('public'));//conexta el front al api
+app.use(express.static('public')); //conecta el front al api
 
 
-//Peticiones HTTP
-//Comprueba funcionamiento del puerto  3000
-app.get('/', (req, res)=>{
-    res.send('Puerto 3000 funcionando'); 
-})
+
+//ruta especifica
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 //GET /conductores: retorna la lista de todos los conductores.
 app.get('/conductores', async (req, res) => {
   try {
-    const {rows} = await pool.query('SELECT nombre FROM conductores'); // tu consulta SQL
-    res.json(rows); // devuelve los resultados como JSON
+    const {rows} = await pool.query('SELECT nombre FROM conductores'); //  consulta SQL
+    res.json(rows);  //devuelve los resultados como JSON
   } 
     catch (err) {
     console.error(err.message);
