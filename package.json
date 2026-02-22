@@ -4,6 +4,7 @@
   "description": "El objetivo de este ejercicio es poner en pratica los contenidos del modulo 6  atravez de la integración Node.js y Express a una base de datos,para exponer endpoints REST que consulten y combinen información. tambien contiene un Front-End simple para que consuma los servicios.",
   "main": "app.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "pg": "^8.18.0"
   }
 }
