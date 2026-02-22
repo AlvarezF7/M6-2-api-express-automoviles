@@ -21,7 +21,6 @@ header {
     gap:20px;
     font-family:'Franklin Gothic ';
     padding: 1rem;
-  
 }
 
 .cards {
@@ -32,13 +31,11 @@ header {
     border: 1px solid #1392c4;
     border-radius: 8px;
     padding: 15px;
-    /*background: linear-gradient(135deg,  #8ec7fc, #2a7fcf,#77b5f0);*/
-    background: linear-gradient(135deg,  #cce6ff, #c3e2ff,#79beffda);
-    box-sizing: border-box; /* para que padding no afecte ancho */
+    background: linear-gradient(135deg, #cce6ff, #c3e2ff,#79beffda);
+    box-sizing: border-box; 
 }
 body{
 min-height: 100vh;
-
 }
 .cards > h2 , .cards > p {
     align-self:  center;
@@ -47,7 +44,6 @@ min-height: 100vh;
 }
 
 .cards > button {
-   
     margin: 15px auto 0 auto;       
     padding: 0.5rem;
     cursor: pointer;

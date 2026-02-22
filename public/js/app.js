@@ -1,7 +1,6 @@
 
 const contenedor = document.getElementById('container');
 
-// Endpoints
 const endpoints = [
     {id: 'conductores', nombre: 'Buscar Conductores', url: '/conductores'},
     {id: 'automoviles', nombre: 'Buscar Automóviles', url: '/automoviles'},
@@ -105,7 +104,7 @@ endpoints.forEach(ep => {
     if (ep.input) {
         input.addEventListener('input', () => {
             const valor = input.value.trim();
-            if (valor.length >= 2) { // al escribir 2 o más letras
+            if (valor.length >= 2) { //letras
                 mostrarDatos(ep.url, resultado, { patente: valor });
             } else {
                 resultado.textContent = ''; // limpia resultado
@@ -121,8 +120,8 @@ endpoints.forEach(ep => {
 function formatoTexto(texto) {
       const excepciones = [ 'sin']; //se mantiene sin mayuscula
     return texto
-        .replace(/_/g, ' ')                 // reemplaza _ por espacio
-        .toLowerCase()                     // todo a minúscula primero
+        .replace(/_/g, ' ')                
+        .toLowerCase()                     
         .split(' ')
         .map(word => excepciones.includes(word) ? word : word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
