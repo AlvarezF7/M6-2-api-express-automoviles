@@ -42,6 +42,9 @@
  7. Abre el Front-End en la ruta http://localhost:3000.
  8. Corre en la terminal **"node index.js"**.
 
+# Ver Proyecto
+- [Link al Proyecto](https://alvarezf7.github.io/M6-2-api-express-automoviles/).
+  
  # Notas
  - Las credenciales de conexión no se suben al repositorio por seguridad.
  - El archivo .env.example sirve como guía para que cada usuario configure su propia conexión.
