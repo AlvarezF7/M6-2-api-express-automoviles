@@ -27,19 +27,20 @@
  # Capturas del Proyecto
  - Vista de un Iphone
  - ![iphone](https://github.com/AlvarezF7/M6-2-api-express-automoviles/blob/main/public/img/dimension-iphone.png).
- - Vista de un Ipad mini![ipad](https://github.com/AlvarezF7/M6-2-api-express-automoviles/blob/main/public/img/ipad-mini.png).
+ - Vista de un Ipad mini
+ - ![ipad](https://github.com/AlvarezF7/M6-2-api-express-automoviles/blob/main/public/img/ipad-mini.png).
 
  # Instruciones para ejecutar el proyecto
  
  1. Clonar el proyecto.
- 2. Instalar dependendecias con el comando " npm install".
+ 2. Instalar dependendecias con el comando **"npm install"**.
  3. Crear la base de datos en PostgreSQL.
-   "CREATE DATABASEm6_automoviles_conductores;"
- 4. Ejecuta el script m6_automoviles_conductores.sql
- 5. Configura las variables de entorno en el archivo .env_ejemplo.
- 6. Inicia el servidor con el comando "npm start".
- 7. Abre el Front-End en la ruta http://localhost:3000 .
- 8. Corre en la terminal "node index.js".
+    **"CREATE DATABASE m6_automoviles_conductores;"**
+ 4. Ejecuta el script **m6_automoviles_conductores.sql**
+ 5. Configura las variables de entorno en el archivo **.env_ejemplo**.
+ 6. Inicia el servidor con el comando **"npm start"**.
+ 7. Abre el Front-End en la ruta http://localhost:3000.
+ 8. Corre en la terminal **"node index.js"**.
 
  # Notas
  - Las credenciales de conexión no se suben al repositorio por seguridad.
