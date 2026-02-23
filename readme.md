@@ -43,7 +43,7 @@
  8. Corre en la terminal **"node index.js"**.
 
 # Ver Proyecto
-- [Link al Proyecto](https://alvarezf7.github.io/M6-2-api-express-automoviles/).
+  proximamente
   
  # Notas
  - Las credenciales de conexión no se suben al repositorio por seguridad.
